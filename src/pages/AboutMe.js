@@ -14,9 +14,9 @@ const AboutMe = () => {
             <Head title="About Me" />
             <h1 className={aboutmeStyles.firstHeader}>About Me</h1>
             <p>
-                I am Rohit Mallick. I am defined by many traits. But the first and foremost will always be how dedicated I am to my family.
-                Proud son of Govind and Amita Mallick and 16th grandchild to Mossadi and Tara Mallick. Not to mention younger brother to Kamini Mallick.
-                They have encouraged my many different dreams. From my travels across the world. To my various hobbies of photography, hiking, and kayaking.
+                I am Rohit Mallick. I am defined by many traits, but the first and foremost will always be how dedicated I am to my family.
+                I am the proud son of Govind and Amita Mallick, 16th grandchild to Mossadi and Tara Mallick and younger brother to Kamini Mallick.
+                They have encouraged my various dreams, helped me to travel the world, and pursue different hobbies like photography, hiking, and kayaking.
             </p> <br />
             <img src={famPic} alt="famPic" className={aboutmeStyles.famPic}/>
             <p className={aboutmeStyles.secCaption}>
