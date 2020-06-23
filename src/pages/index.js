@@ -1,22 +1,26 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import profpic from "./Facebook_Profile_Pic.jpg"
+import indexStyles from './index.module.scss'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+import Layout from '../components/layout'
+import Head from '../components/head'
 
-export default IndexPage
+import cv from '../images/Rohit_Mallick_CV.pdf'
+
+const IndexPage = () => {
+
+  return (
+    <Layout>
+      <Head title="Home"/>
+      <h1 className={indexStyles.greeting}>Hiya!</h1>
+      <h2>I'm Rohit Mallick, a Clemson University Graduate Student studying Computer Science</h2>
+      <img src={profpic} alt="profpic" className={indexStyles.profpic}/>
+      <p className={indexStyles.con}>Need a Computational Neuroscientist? <Link to="/Contact">Contact Me!</Link></p>
+      <p className={indexStyles.download}>Or would you like to download my <a href={cv} target="_blank">CV</a>?</p>
+    </Layout>
+  )
+}
+
+export default IndexPage;
